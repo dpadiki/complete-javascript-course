@@ -248,7 +248,7 @@ if (scorejohn > scoremike && scorejohn > scoremary){
     console.log(' It\'s an draw');
 }
 
-// my second commit
+// my second commit haha
 
 
 
