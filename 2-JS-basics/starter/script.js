@@ -230,6 +230,7 @@ if (weight == 23){ // == is called strict equality operator
 }
 */
 
+/*
 //coding challendge 2
 
 var scorejohn = ( 189 + 120 + 103)/3;
@@ -250,11 +251,12 @@ if (scorejohn > scoremike && scorejohn > scoremary){
 
 // my second commit haha
 
+*/
 
 
 
-
-/*if (scorejohn > scoremike){
+/*
+if (scorejohn > scoremike){
     console.log(' John\'s team with score ' + scorejohn);
 }else if (scoremike > scorejohn){
     console.log(' Mike\'s team with score ' + scoremike);
@@ -264,6 +266,14 @@ if (scorejohn > scoremike && scorejohn > scoremary){
 */
 
 
+//functions
+
+function carmodel(Modelname){
+return Modelname;
+}
+
+var whichcar = carmodel("Tesla");
+console.log(whichcar);
 
 
 
