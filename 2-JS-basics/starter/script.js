@@ -267,13 +267,102 @@ if (scorejohn > scoremike){
 
 
 //functions
-
+/*
 function carmodel(Modelname){
 return Modelname;
 }
 
 var whichcar = carmodel("Tesla");
 console.log(whichcar);
+
+function calculateage(birthyear){
+    return 2019 - birthyear;
+}
+
+var agedheeju = calculateage(1990);
+console.log(agedheeju);
+*/
+
+/*
+function calculateage(birthyear){
+    return 2019 - birthyear;
+}
+var age = calculateage(1990);
+console.log ( 'The age is' + age );
+
+function yearsuntilretirement(year, firstName){
+    var age = calculateage(year)
+    var retirement = 65 - age;
+    if(retirement > 0){
+    console.log( firstName + ' is about to retire in ' + retirement + ' years');
+    } else {
+    console.log( firstName + ' is retired');
+    }
+}
+
+    yearsuntilretirement(1990, 'Dheeraj');
+    yearsuntilretirement(1991, 'usha');
+    yearsuntilretirement(1945, 'india');
+*/
+
+// function statements and expressions
+// function expression function whatdoyoudo(job, firstname)
+
+// Function Expression
+/*
+var whatdoyoudo = function(job, firstname){
+
+switch (job) {
+ case 'teacher':
+  return firstname + ' Teaches kids how to code'
+ case 'driver':
+  return firstname + ' drivers the car'
+  case 'IT':
+  return firstname + ' works as IT engineer'
+  default:
+  return firstname + ' Does something else.'
+}
+}
+console.log(whatdoyoudo('IT', 'Dheeraj'));
+*/
+
+//Arrays
+
+/*
+var names = ['Dheeju', 'graham', 'Bert', 'Arie'];
+var years = Array(1990, 1991, 1992);
+
+console.log( names);
+console.log( names.length);
+
+//mutate array data
+names[2] = 'froklage';
+names[names.length] = 'Jansen';
+console.log( names);
+
+//Different Data types
+
+var dheeju = [ 'padiki', 'dheeraj', 1990, 'designer', false];
+dheeju.push('blue');
+dheeju.unshift('Mr');
+
+console.log(dheeju);
+
+dheeju.pop();
+dheeju.shift();
+console.log(dheeju);
+
+console.log(dheeju.indexOf(1990));
+
+var isdesigner = dheeju.indexOf('designer') === -1 ?
+'Dheeju not a designer' : 'Dheeju is a Designer';
+console.log(isdesigner);
+
+*/
+
+//Arrays assignment
+
+
 
 
 
