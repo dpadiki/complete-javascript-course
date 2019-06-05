@@ -359,10 +359,135 @@ var isdesigner = dheeju.indexOf('designer') === -1 ?
 console.log(isdesigner);
 
 */
-
+/*
 //Arrays assignment
 
+function tipcaluculator(bill){
+    var percentage;
+        
+    switch (bill) {
+        case bill <50:
+         percentage = 0.2;
+         break;
+        case bill >= 50 && bill < 200:
+         percentage = 0.15;
+         break;
+        default:
+         percentage = 0.1;
+        }
+        return percentage * bill;
+}
 
+    var bills = [124, 48, 68]
+    var tips = [ tipcaluculator(bills[0]) ,
+                 tipcaluculator(bills[1]) ,
+                 tipcaluculator(bills[2]) ]
+    var finalvalues = [ bills[0] + tips[0],
+                        bills[1] + tips[1],
+                        bills[2] + tips[2]]
+    console.log(tips, finalvalues);
+    
+*/
+
+//objects and properties
+
+/*
+var dheeju = {
+    firstName: 'Dheeraj',
+    lastName: 'Padiki',
+    DOB: 1990,
+    family: ['usha', 'Rajani', 'raghu', 'Dhruva'],
+    Ismarried: false,
+    job: 'software'
+}
+console.log(dheeju.firstName);
+console.log(dheeju['lastName']);
+var x = 'lastName';
+console.log(dheeju[x]);
+
+//new object syntax
+var usha = new Object()
+usha.firstName = "Usha";
+usha.lastName = "Padiki";
+usha.DOB = 1991;
+console.log(usha);
+*/
+/*
+var dheeju = {
+    firstName: 'Dheeraj',
+    lastName: 'Padiki',
+    DOB: 1991,
+    family: ['usha', 'Rajani', 'raghu', 'Dhruva'],
+    Ismarried: false,
+    job: 'software',
+    Calcage: function(){
+        this.age =  2019 - this.DOB;
+    }
+}
+dheeju.Calcage()
+console.log(dheeju)
+*/
+
+//Challenge 4
+/*
+var mark = {
+    fullname: 'Mark',
+    mass: 100,
+    height: 1.76,
+    markbmi: function(){
+    this.bmi = this.mass / (this.height*this.height)
+    return this.bmi;
+    }
+   }
+
+var john = {
+    fullname: 'john',
+    mass: 90,
+    height:1.80,
+    johnbmi: function(){ 
+        this.bmi = this.mass / (this.height*this.height)
+        return this.bmi;
+    }    
+}
+
+mark.markbmi()
+john.johnbmi()
+
+console.log(mark, john);
+
+
+if(mark.markbmi > john.johnbmi){
+    console.log('The BMI of ' + mark.fullname + ' is greater than ' + john.fullname)
+} else if (john.johnbmi > mark.markbmi) {
+    console.log('The BMI of ' + john.fullname + ' is greater than ' + mark.fullname)
+} else {
+    console.log('The BMI of ' + john.fullname + ' is equal to ' + mark.fullname)
+}
+
+*/
+
+/*
+//loops & iterations
+//for loop
+for (i = 1; i <= 20; i += 2){
+    console.log(i);
+}
+
+var dheeju = ['dheeraj', 'padiki', 1990, 'developer',false];
+for (var i = 0; i < dheeju.length; i++){
+console.log(dheeju[i]);
+}
+
+//while loop
+var i = 0;
+while (i < dheeju.length){
+    console.log(dheeju[i]);
+    i++;
+}
+*/
+
+
+// continue and break statements
 
 
 
