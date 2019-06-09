@@ -489,7 +489,7 @@ while (i < dheeju.length){
 
 // continue and break statements
 
-
+/*
 var dheeju = [ 'dheeraj', 'usha', 1990, 'kakinada'];
 
 for (var i = 0; i < dheeju.length; i++){
@@ -506,9 +506,74 @@ for (var i = 0; i < dheeju.length; i++){
 for (var i = dheeju.length - 1; i >= 0; i--) {
     console.log(dheeju[i]);
 }
+*/
 
+// coding challenge 5
 
+var john = {
+    fullname: 'john Smith',
+    bills: [124,48,268,180,42],
+    calctip: function(){
+        this.tips = [];
+        this.finalvalue = [];
 
+        for (var i = 0; i < this.bills.length; i++){
+            var percentage;
+            var bill = this.bills[i];
+            if (bill < 50){
+                percentage = 0.5;
+            }else if (bill >= 50 && bill < 200){
+                percentage = 0.2;
+            }else{
+                percentage = 0.1;
+            }
+
+            this.tips[i] = bill * percentage;
+            this.finalvalue[i] = bill + bill * percentage;
+        }
+    }
+}
+
+var Mark = {
+    fullname: 'Mark Miller',
+    bills: [77,375,110,45],
+    calctip: function(){
+        this.tips = [];
+        this.finalvalue = [];
+
+        for (var i = 0; i < this.bills.length; i++){
+            var percentage;
+            var bill = this.bills[i];
+            if (bill < 100){
+                percentage = 0.2;
+            }else if (bill >= 100 && bill < 300){
+                percentage = 0.1;
+            }else{
+                percentage = 0.25;
+            }
+
+            this.tips[i] = bill * percentage;
+            this.finalvalue[i] = bill + bill * percentage;
+        }
+    }
+}
+
+john.calctip();
+Mark.calctip();
+console.log(john, Mark);
+
+function calcAverage(tips){
+    var sum = 0;
+    for (i = 0; i < tips.length; i++){
+        sum = sum + tips[i];
+    }
+    return sum /tips.length;
+}
+
+john.average = calcAverage(john.tips);
+Mark.average = calcAverage(Mark.tips);
+
+console.log(john, Mark);
 
 
 
