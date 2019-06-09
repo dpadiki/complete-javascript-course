@@ -490,11 +490,22 @@ while (i < dheeju.length){
 // continue and break statements
 
 
+var dheeju = [ 'dheeraj', 'usha', 1990, 'kakinada'];
 
+for (var i = 0; i < dheeju.length; i++){
+    if(typeof dheeju[i] !== 'string')continue ; 
+    console.log(dheeju[i]);
+}
 
+for (var i = 0; i < dheeju.length; i++){
+    if(typeof dheeju[i] !== 'string') break ; 
+    console.log(dheeju[i]);
+}
 
-
-
+//looping backwards
+for (var i = dheeju.length - 1; i >= 0; i--) {
+    console.log(dheeju[i]);
+}
 
 
 
