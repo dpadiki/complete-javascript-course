@@ -510,6 +510,7 @@ for (var i = dheeju.length - 1; i >= 0; i--) {
 
 // coding challenge 5
 
+/*
 var john = {
     fullname: 'john Smith',
     bills: [124,48,268,180,42],
@@ -575,6 +576,7 @@ Mark.average = calcAverage(Mark.tips);
 
 console.log(john, Mark);
 
+*/
 
 
 
